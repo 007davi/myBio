@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family= Ubuntu:ital,wght@0,300;0,400;0,500;1,700&display=swap');
+
+html,body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    
+}
+#home{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;   
+    width: 100vw;
+    color: white;
+    background-image: linear-gradient( -30deg, #010003, #0A001A, #010003  );
+    font-family: Ubuntu;
+}
+
+#sidebar{
+    width: 100vw;
+    height: 8%;  
+    background-color: transparent;
+    backdrop-filter: blur(200px);  
+    border: 1px solid white;
+    position: fixed;
+    top: 0;
+    font-weight: 1000;
+    font-size:xx-large  ;
+    font-family: Ubuntu;
+}
+
+#logo{
+    width: 50%;
+    margin-left: 200px;
+}
+
+.fotologoHTML{
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+.fotologoCSS{
+    height: 100px;
+    border-radius: 50%;
+}
+
+.fotologoJS{
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 0;
+}
+
+#sidebar ul {
+    display: flex;
+    width: 50%; 
+    list-style-type: none;
+    position: fixed;
+    top: 2%;
+    left: 50%;
+    background-color:transparent;
+    color: white;
+    margin-top: 1%;
+    
+}
+
+#sidebar li{
+    margin-right:10%; 
+
+}
+
+#bloco{
+    display: flex;
+    width:100%;
+    height: 100%;
+    flex-direction: column;     
+    font-family: Ubuntu;
+    align-items: center;  
+    
+
+}
+
+#content{
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-family: Ubuntu;
+}
+
+.fot{
+    width: 40%;
+    height: 60%;
+    padding-top: 80px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.perfil{
+    height: 800px;
+   
+    animation: float 3s ease-in-out infinite;
+    
+}
+
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0);        
+    }
+    50%{
+        transform: translateY(-50px);    
+    }
+    
+}
+
+
+.txt{
+    width: 50%;
+    height: 40%;
+    margin-left: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    font-size: 30px;
+  
+}
+#elementEL{
+    font-size: 150px;
+}
+
+#elementEL::after{
+    content: "|";
+    margin-left: 2px;
+    animation: blink 0.7s infinite;
+    font-size: 100px;
+}
+
+@keyframes blink{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+#sobre{
+    color: white;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient( 30deg, #010003, #0A001A, #010003 );
+    padding-bottom: 0;
+    font-family: Ubuntu;
+    background-size: contain;
+}
+.titleSO{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Ubuntu;
+    font-size: 70px;
+    margin: 0;
+    height: 25%;
+}
+
+.SOcontent{
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Ubuntu;
+    font-size: 50px;
+    font-weight: 1000;
+    
+}
+
+.SOcontent img{
+    height: 700px;
+    border-radius: 50%;
+    padding-right: 15px ;
+   
+} 
+
+.SOcontent, p{
+    width: 70%;
+    height:50%;
+    margin-left: 10%;
+
+}
+
+#skils{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient( -30deg, #010003, #0A001A, #010003 );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Ubuntu;
+    font-size: xx-large;
+    padding-top: 5%;
+}
+
+#skils ul{
+    height: 90%;
+    width: 60%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+#skils li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+    height: 500px;
+    width: 500px;
+    background-color:#0A001A;
+    border-radius: 90px;
+
+}
+
+.skiledit{
+    height: 200px;
+ 
+
+}
+
+#projet{
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient( 30deg, #010003, #0A001A, #010003);
+    flex-direction: column;
+    padding-top: 5%;
+    font-family: Ubuntu;
+    font-size: xx-large;
+}
+
+#ptj{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.pro{
+    margin: 5%;
+    height: 500px;
+    width: 500px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
